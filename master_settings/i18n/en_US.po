@@ -1,0 +1,173 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* master_settings
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-16 12:32+0000\n"
+"PO-Revision-Date: 2021-03-16 12:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_res_config_settings__account_costing
+msgid "Calculating the cost variances"
+msgstr "Calculating the cost variances"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_res_config_settings__account_production
+msgid "Calculation of production in progress"
+msgstr "Calculation of production in progress"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_res_config_settings__account_manufacture
+msgid "Calculation of raw materials and materials in progress"
+msgstr "Calculation of raw materials and materials in progress"
+
+#. module: master_settings
+#: model:ir.model,name:master_settings.model_res_config_settings
+msgid "Config Settings"
+msgstr "Config Settings"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_master_settings__create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_master_settings__create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_master_settings__display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_res_config_settings__work_hour
+msgid "Fixed working hours"
+msgstr "Fixed working hours"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_master_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_master_settings____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_master_settings__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_master_settings__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_res_config_settings__connect_with_hr
+msgid "Linking with human resources"
+msgstr "Linking with human resources"
+
+#. module: master_settings
+#: model:ir.actions.act_window,name:master_settings.master_settings_action
+msgid "Masetr Settings"
+msgstr "Masetr Settings"
+
+#. module: master_settings
+#: model_terms:ir.actions.act_window,help:master_settings.master_settings_action
+#: model:ir.model,name:master_settings.model_master_settings
+msgid "Master Settings"
+msgstr "Master Settings"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_res_config_settings__calculation_cost_not_direct
+msgid "Method of calculating indirect costs"
+msgstr "Method of calculating indirect costs"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_master_settings__name
+msgid "Name"
+msgstr "Name"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_res_config_settings__change_cost_range_product
+msgid "Permissible percentage change in the cost of the product"
+msgstr "Permissible percentage change in the cost of the product"
+
+#. module: master_settings
+#: model_terms:ir.ui.view,arch_db:master_settings.res_config_settings_view_form
+msgid "Production Variables"
+msgstr "Production Variables"
+
+#. module: master_settings
+#: model:ir.actions.act_window,name:master_settings.jcb_attendance_management_configuration
+msgid "Settings"
+msgstr "Settings"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_res_config_settings__product_scrap_stock
+msgid "Supplying combination products to the store"
+msgstr "Supplying combination products to the store"
+
+#. module: master_settings
+#: model:ir.model.fields,field_description:master_settings.field_res_config_settings__type_cost_recipt
+msgid "Type of cost on delivery"
+msgstr "Type of cost on delivery"
+
+#. module: master_settings
+#: model:ir.ui.menu,name:master_settings.master_setting_menu
+msgid "Ultimate Settings"
+msgstr "Ultimate Settings"
+
+#. module: master_settings
+#: model_terms:ir.ui.view,arch_db:master_settings.res_config_settings_view_form
+msgid "Variables"
+msgstr "Variables"
+
+#. module: master_settings
+#: model:ir.ui.menu,name:master_settings.Configuration_attendance_management_menu
+msgid "Variables Settings"
+msgstr "Variables Settings"
+
+#. module: master_settings
+#: selection:res.config.settings,calculation_cost_not_direct:0
+msgid "التكلفة بالحبة للمنتجات"
+msgstr ""
+
+#. module: master_settings
+#: selection:res.config.settings,calculation_cost_not_direct:0
+msgid "التكلفة بالساعة لمراكز التشغيل"
+msgstr ""
+
+#. module: master_settings
+#: model_terms:ir.ui.view,arch_db:master_settings.res_config_settings_view_form
+msgid "Variables"
+msgstr "Variables"
+
+#. module: master_settings
+#: selection:res.config.settings,type_cost_recipt:0
+msgid "فعلى"
+msgstr ""
+
+#. module: master_settings
+#: model_terms:ir.ui.view,arch_db:master_settings.res_config_settings_view_form
+msgid "Production Variables"
+msgstr ""
+
+#. module: master_settings
+#: selection:res.config.settings,type_cost_recipt:0
+msgid "معياري"
+msgstr ""
+

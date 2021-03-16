@@ -9,7 +9,7 @@
             <field name="arch" type="xml">
                 <xpath expr="//div[hasclass('settings')]" position="inside">
                     <div class="app_settings_block" data-string="Variables" string="Variables" data-key="master_settings" >
-                        <h2>المتغيرات</h2>
+                        <h2>Variables</h2>
                         <div class="row mt16 o_settings_container">
                                 <div class="o_setting_left_pane">
                                     <group>
@@ -23,7 +23,7 @@
                 </xpath>
                 <xpath expr="//div[hasclass('settings')]" position="inside">
                     <div class="app_settings_block" string="Production Variables" data-key="master_settings" >
-                        <h2>متغيرات الانتاج</h2>
+                        <h2>Production Variables</h2>
                         <div class="row mt16 o_settings_container">
                             <div class="o_setting_left_pane">
                                 <group>
@@ -87,7 +87,7 @@
 
 
         <menuitem id="Configuration_attendance_management_menu"
-                  name="اعدادات المتغيرات"
+                  name="Variables Settings"
                   action="jcb_attendance_management_configuration"
                   parent="master_setting_menu"
                   sequence="1"/>

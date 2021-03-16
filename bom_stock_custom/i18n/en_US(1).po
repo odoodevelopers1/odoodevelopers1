@@ -1,0 +1,252 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* bom_stock_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-16 12:14+0000\n"
+"PO-Revision-Date: 2021-03-16 12:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "<span>Product Type</span>"
+msgstr "Product Type"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "<span>Product code</span>"
+msgstr "Product code"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "<span>Product</span>"
+msgstr "Product"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "<span>Quantity</span>"
+msgstr "Quantity"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "<span>Scrap %</span>"
+msgstr "Scrap %"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "<span>Scrap Quantity</span>"
+msgstr "Scrap Quantity"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "<span>Stock</span>"
+msgstr "Stock"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "<span>Unit</span>"
+msgstr "Unit"
+
+#. module: bom_stock_custom
+#: selection:mrp.bom,state:0
+msgid "Active"
+msgstr "Active"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "Bell of Material Report"
+msgstr "Bell of Material Report "
+
+#. module: bom_stock_custom
+#: model:ir.model,name:bom_stock_custom.model_mrp_bom
+msgid "Bill of Material"
+msgstr "Bill of Material"
+
+#. module: bom_stock_custom
+#: model:ir.model,name:bom_stock_custom.model_mrp_bom_line
+msgid "Bill of Material Line"
+msgstr ""
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__bom_code
+msgid "Bom Code"
+msgstr "Bom Code"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__bom_default
+msgid "Bom Default"
+msgstr "Bom Default"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "Bom code"
+msgstr "Bom code"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_product__check_product_manufacture
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_template__check_product_manufacture
+msgid "Check Product Manufacture"
+msgstr "Check Product Manufacture"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_product__cost_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_template__cost_custom
+msgid "Cost Custom"
+msgstr "Cost Custom"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__details
+msgid "Details"
+msgstr "Details"
+
+#. module: bom_stock_custom
+#: selection:product.template,types_production:0
+msgid "Final Scrap"
+msgstr "Final Scrap"
+
+#. module: bom_stock_custom
+#: selection:product.template,types_production:0
+msgid "Finish Product"
+msgstr "Finish Product"
+
+#. module: bom_stock_custom
+#: selection:product.template,types_production:0
+msgid "Half Manufacture"
+msgstr "Half Manufacture"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__image
+msgid "Image"
+msgstr "Image
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__information
+msgid "Information"
+msgstr "Information"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "Material"
+msgstr "\"Material"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,help:bom_stock_custom.field_mrp_bom__image
+msgid "Medium-sized image of the product. It is automatically resized as a 128x128px image, with aspect ratio preserved, only when the image exceeds one of those sizes. Use this field in form views or some kanban views."
+msgstr ""
+
+#. module: bom_stock_custom
+#: model:ir.actions.report,name:bom_stock_custom.mrp_bom_report
+msgid "Mrp Bom reports"
+msgstr ""
+
+#. module: bom_stock_custom
+#: selection:mrp.bom,state:0
+msgid "Not Active"
+msgstr "Not Active"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__other
+msgid "Other"
+msgstr "Other"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.inherit_mrp_bom_pages_form
+msgid "PDF"
+msgstr ""
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__product_tmpl_id
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "Product"
+msgstr "Product"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__product_code
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom_line__code
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_product__product_code
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_template__product_code
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "Product Code"
+msgstr "Product Code"
+
+#. module: bom_stock_custom
+#: model:ir.model,name:bom_stock_custom.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom_line__quantity_line_bom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "Quantity"
+msgstr "Quantity"
+
+#. module: bom_stock_custom
+#: selection:product.template,types_production:0
+msgid "Return Manufacture"
+msgstr "Return Manufacture"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom_line__scrap_modelas
+msgid "Scrap %"
+msgstr "Scrap %"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom_line__scrap_qty
+msgid "Scrap Quantity"
+msgstr "Scrap Quantity"
+
+#. module: bom_stock_custom
+#: selection:product.template,types_production:0
+msgid "Spoiled"
+msgstr "Spoiled"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__state
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "State"
+msgstr "State"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom__stock_id
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.mrp_bom_template
+msgid "Stock"
+msgstr "Stock"
+
+#. module: bom_stock_custom
+#: selection:product.template,types_production:0
+msgid "Temporary Scrap"
+msgstr "Temporary Scrap"
+
+#. module: bom_stock_custom
+#: model_terms:ir.ui.view,arch_db:bom_stock_custom.inherit_mrp_bom_form
+msgid "Total qty"
+msgstr "Total qty"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom_line__types_production
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_product__types_production
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_template__types_production
+msgid "Types Production"
+msgstr "نTypes Production"
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_product__volume_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_template__volume_custom
+msgid "Volume Custom"
+msgstr ""
+
+#. module: bom_stock_custom
+#: model:ir.model.fields,field_description:bom_stock_custom.field_mrp_bom_line__warehouse_item
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_product__stock_warehouse_id
+#: model:ir.model.fields,field_description:bom_stock_custom.field_product_template__stock_warehouse_id
+msgid "Warehouse"
+msgstr "Warehouse"
+
