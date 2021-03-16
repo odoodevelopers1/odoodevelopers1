@@ -32,7 +32,7 @@ class MrpWorkcenter(models.Model):
     numbers_of_workers = fields.Integer(string="No Workers",compute="calculation_avrage_workers")
     range_price_workers = fields.Float(string="worker price average", compute="calculation_price_avrage")
     type_active = fields.Selection([('active', 'Active'), ('notactive', 'Not Active')])
-    equipment_ids = fields.One2many('maintenance.equipment', 'category_id', string='Equipments', copy=False)
+    # equipment_ids = fields.One2many('maintenance.equipment', 'category_id', string='Equipments', copy=False)
     machine_ids = fields.One2many('maintenance.equipment', 'machine_custom_id',)
     total_workers = fields.Integer(compute="calculations_total_workers")
     count_machine = fields.Integer(compute="calculation_count_machine")
@@ -82,11 +82,11 @@ class MrpWorkcenter(models.Model):
     #         if rec.total_workers > rec.numbers_of_workers:
     #             raise ValidationError("error workers must be equal workers")
     @api.multi
-    @api.onchange('machine_ids','equipment_ids')
+    @api.onchange('machine_ids')
     def change_value_machine(self):
         for rec in self:
             rec.update({'equipment_ids': rec.machine_ids.ids})
-            rec.update({'machine_ids': rec.equipment_ids.ids})
+            # rec.update({'machine_ids': rec.equipment_ids.ids})
 
 
     @api.model
