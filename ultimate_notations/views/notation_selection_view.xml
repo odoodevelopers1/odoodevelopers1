@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="notations_selection_action" model="ir.actions.act_window">
+            <field name="name">Notations Selection</field>
+            <field name="res_model">notations.selection</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Notations Selection
+                </p>
+            </field>
+        </record>
+        <record id="notations_selection_form" model="ir.ui.view">
+            <field name="name">notations.selection.form</field>
+            <field name="model">notations.selection</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+<!--                        <button name="confirm_notation" type="object" string="Block" class="oe_highlight" />-->
+<!--                        <button name="cancel_notation" type="object" string="open" class="oe_highlight" />-->
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <group>
+                            <group>
+                                <label for="reasons_id" string="The Notations"/>
+                                <div class="o_row">
+                                    <field name="category_notes" widget="selection" attrs="{'readonly':[('state','=','confirm')]}" string="الترميز"/>
+                                    <button name="confirm_notation" type="object" string="Block" class="oe_highlight"/>
+                                    <button name="cancel_notation" type="object" string="open" class="oe_highlight" />
+                                </div>
+                                <field name="code_description"/>
+                                <field name="calculation_fi" invisible="1"/>
+<!--                                <field name="name"/>-->
+<!--                                <field name="reasons_id" widget="selection"/>-->
+
+<!--                                <field name="code_st"/>-->
+<!--                            </group>-->
+<!--                            <group>-->
+<!--                                <field name="code_type"/>-->
+<!--                                <field name="code_seq"/>-->
+<!--                                <field name="sequence_auto"/>-->
+<!--                            </group>-->
+                            </group>
+                        </group>
+                            <notebook>
+                                <page string="Coding" attrs="{'invisible':[('state','!=','confirm')]}">
+                                    <field name="notations_line_ids">
+                                        <tree editable="bottom">
+                                            <field name="code" invisible="1"/>
+<!--                                            <field name="codeing_custom"/>-->
+                                            <field name="name"/>
+                                            <field name="state"/>
+                                            <field name="category_notes" invisible="1"/>
+                                            <field name="sequence_auto" invisible="1"/>
+                                            <field name="new_codeing"/>
+                                            <field name="auto_select" invisible="1"/>
+                                        </tree>
+                                    </field>
+                                </page>
+                            </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="notations_selection_tree" model="ir.ui.view">
+            <field name="name">notations.selection.tree</field>
+            <field name="model">notations.selection</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="category_notes"/>
+                    <field name="code_description"/>
+<!--                    <field name="calculation_fi"/>-->
+<!--                    <field name="code_st"/>-->
+<!--                    <field name="code_type"/>-->
+<!--                    <field name="code_seq"/>-->
+<!--                    <field name="sequence_auto"/>-->
+                </tree>
+            </field>
+        </record>
+
+        <menuitem id="selection_notation_coding_menu"
+                  name="Notations"
+                  action="notations_selection_action"
+                  parent="root_notations_menu"
+                  sequence="2"/>
+    </data>
+</odoo>

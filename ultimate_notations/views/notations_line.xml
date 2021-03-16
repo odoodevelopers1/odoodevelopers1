@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="notations_line_action" model="ir.actions.act_window">
+            <field name="name">Notations Line</field>
+            <field name="res_model">notations.line</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Notations Line
+                </p>
+            </field>
+        </record>
+        <record id="notations_line_form" model="ir.ui.view">
+            <field name="name">notations.line.form</field>
+            <field name="model">notations.line</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                           <group>
+                               <field name="name"/>
+                               <field name="sequence_auto"/>
+                               <field name="code"/>
+                           </group>
+                            <group>
+                                <field name="state"/>
+                                <field name="category_notes"/>
+                                <field name="reasons_id" invisible="1"/>
+                                <field name="codeing_custom"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="notations_line_tree" model="ir.ui.view">
+            <field name="name">notations.line.tree</field>
+            <field name="model">notations.line</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="sequence_auto"/>
+                    <field name="state"/>
+                    <field name="reasons_id"/>
+                    <field name="category_notes"/>
+<!--                    <field name="codeing_custom"/>-->
+                </tree>
+            </field>
+        </record>
+<!--        <menuitem id="notations_line_menu"-->
+<!--                  name=" جميع الترميزات"-->
+<!--                  action="notations_line_action"-->
+<!--                  parent="root_notations_menu"-->
+<!--                  sequence="4"/>-->
+    </data>
+</odoo>

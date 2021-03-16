@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="inherit_mrp_workcenter_form" model="ir.ui.view">
+            <field name="name">inherit.mrp.workcenter.form</field>
+            <field name="model">mrp.workcenter</field>
+            <field name="inherit_id" ref="mrp.mrp_workcenter_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="code" invisible="1"/>
+                    <field name="numbers_of_workers"/>
+                    <field name="range_price_workers"/>
+                    <field name="type_active"/>
+                    <field name="total_workers" invisible="1"/>
+                    <field name="count_machine" invisible="1"/>
+                </xpath>
+                <xpath expr="//page[1]" position="after" >
+                    <page string="Machine" invisible="0">
+                        <field name="machine_ids"  widget="many2many" >
+                            <tree editable="bottom"  >
+                                <field name="name" readonly="1"/>
+                                <field name="technician_user_id" readonly="1"/>
+                                <field name="category_id" readonly="1"/>
+                                <field name="code" readonly="1"/>
+                                <field name="numbers_of_workers" sum="Total" readonly="1"/>
+                                <field name="range_price_workers" sum="Total" readonly="1"/>
+                                <field name="type_active" readonly="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+        <record id="inherit_maintenance_equipment_tree" model="ir.ui.view">
+            <field name="name">inherit.maintenance.equipment.tree</field>
+            <field name="model">maintenance.equipment</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_view_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="code"/>
+                    <field name="numbers_of_workers"/>
+                    <field name="range_price_workers"/>
+                    <field name="type_active"/>
+                    <field name="cost_hour"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="inherit_maintenance_equipment_form" model="ir.ui.view">
+            <field name="name">inherit maintenance.equipment.form</field>
+            <field name="model">maintenance.equipment</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='owner_user_id']" position="after">
+                    <field name="code"/>
+                    <field name="numbers_of_workers"/>
+                    <field name="range_price_workers"/>
+                    <field name="type_active"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="inherit_mrp_routing_form" model="ir.ui.view">
+            <field name="name">inherit.mrp.routing.form</field>
+            <field name="model">mrp.routing</field>
+            <field name="inherit_id" ref="mrp.mrp_routing_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='name']" position="after">
+                    <field name="selection_type"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

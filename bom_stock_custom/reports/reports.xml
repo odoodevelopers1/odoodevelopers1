@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <report id="mrp_bom_report"
+                model="mrp.bom"
+                string="Mrp Bom reports"
+                report_type="qweb-pdf"
+                name="bom_stock_custom.mrp_bom_template"
+                file="bom_stock_custom.mrp_bom_template"
+        />
+    </data>
+</odoo>

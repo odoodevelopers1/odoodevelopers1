@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="master_settings_action" model="ir.actions.act_window">
+            <field name="name">Masetr Settings</field>
+            <field name="res_model">master.settings</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Master Settings
+                </p>
+            </field>
+        </record>
+        <menuitem id="master_setting_menu"
+                  name="Ultimate Settings" />
+<!--        <menuitem id="master_setting_settings_action_menu"-->
+<!--                  name="Settings"-->
+<!--                  action="master_settings_action"-->
+<!--                  parent="master_setting_menu"-->
+<!--                  sequence="1"/>-->
+
+    </data>
+</odoo>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="inherit_product_template_form" model="ir.ui.view">
+            <field name="name">inherit.product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='sale_ok']" position="before">
+                    <group>
+                        <field name="product_code"/>
+                        <field name="check_product_manufacture"/>
+                        <field name="types_production" attrs="{'invisible':[('check_product_manufacture','=', False)]}"/>
+                        <field name="stock_warehouse_id"/>
+                    </group>
+
+                </xpath>
+            </field>
+        </record>
+        <record id="inherit_mrp_bom_form" model="ir.ui.view">
+            <field name="name">inherit.mrp.bom.form</field>
+            <field name="model">mrp.bom</field>
+            <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='routing_id']" position="after">
+                    <field name="bom_code"/>
+                    <field name="product_code"/>
+                    <field name="bom_default"/>
+                    <field name="state"/>
+                    <field name="stock_id"/>
+                </xpath>
+                <xpath expr="//field[@name='bom_line_ids']/tree//field[@name='operation_id']" position="after">
+                    <field name="scrap_modelas"/>
+                    <field name="scrap_qty"/>
+                    <field name="warehouse_item"/>
+                    <field name="types_production"/>
+                    <field name="quantity_line_bom" string="Total qty"/>
+                    <field name="code"/>
+                </xpath>
+                <xpath expr="//field[@name='code']" position="before">
+                        <field name="image" widget='image' class="oe_avatar"/>
+                </xpath>
+            </field>
+
+        </record>
+        <record id="inherit_mrp_bom_pages_form" model="ir.ui.view">
+            <field name="name">inherit.mrp.bom..pages.form</field>
+            <field name="model">mrp.bom</field>
+            <field name="inherit_id" ref="mrp.mrp_bom_form_view"/>
+            <field name="arch" type="xml">
+               <notebook position="inside">
+                   <page string="PDF">
+                       <field name="information"/>
+                       <field name="other"/>
+                       <field name="details" widget="pdf_viewer"/>
+                   </page>
+               </notebook>
+            </field>
+        </record>
+    </data>
+</odoo>

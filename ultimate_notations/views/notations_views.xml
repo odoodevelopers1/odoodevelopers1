@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="ultimate_notations_relations_action" model="ir.actions.act_window">
+            <field name="name">Ultimate Notations Relations</field>
+            <field name="res_model">notations.relations</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Notations Relations
+                </p>
+            </field>
+        </record>
+        <record id="notations_relations_form" model="ir.ui.view">
+            <field name="name">notations.relations.form</field>
+            <field name="model">notations.relations</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="relations_id"/>
+                             <field name="category_notes"/>
+                        </group>
+<!--                        <notebook>-->
+<!--                            <page string="Coding">-->
+<!--                                <field name="notations_line_ids">-->
+<!--                                    <tree editable="bottom">-->
+<!--                                        <field name="name"/>-->
+<!--                                        <field name="code"/>-->
+<!--                                        <field name="state"/>-->
+<!--                                        <field name="reasons_id"/>-->
+<!--                                    </tree>-->
+<!--                                </field>-->
+<!--                            </page>-->
+<!--                        </notebook>-->
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <menuitem id="root_notations_menu"
+                  name="The Notations Setting"/>
+<!--        <menuitem id="coding_notations_custom_menu"-->
+<!--                  name="اعدادات الترميز"-->
+<!--                  action="ultimate_notations_relations_action"-->
+<!--                  parent="root_notations_menu"-->
+<!--                  />-->
+
+
+    </data>
+</odoo>

@@ -1,0 +1,27 @@
+
+
+                  description for ultimate task for Bell of Material and stock
+
+                                 Task data: 4-3-2021
+
+                        Time Start: 12:30 PM     Time end: 2:45 PM
+
+                  create by:   Sameer mustafa Fathy   Senior Odoo Developer
+
+1-add four fields in stock and add more details to products manufacture and
+                warehouse and check state and add code dynamic
+
+
+2-add more fields in bill of material code product related with product in stock
+and add code dynamic for bill of material and add stock by default add state active
+and nonactive
+
+
+3-add more field in BOM line product add code related with product and add unit
+and quantity and scrap quantity and scrap% and warehouse of product related with
+product
+
+
+4-add page in notebook this fields used to attachment PDF file and can add more
+details to text and html fields
+

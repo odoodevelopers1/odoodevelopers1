@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="mrp_bom_template" >
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <t t-foreach="docs" t-as="os">
+                    <h4 class="text-center"  style="background-color:#01A09C;color:white;padding:10px">Bell of Material Report</h4>
+                    <br/>
+                    <table class="table table-bordered " >
+                        <tbody>
+                            <tr class="border-black" style="background-color:#01A09C;color:white">
+                                <tr class="border-black">
+                                    <td class="text-center" style="background-color:#875A7B;color:white">
+                                        <p >Product</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="os.product_tmpl_id.name"/>
+                                    </td>
+                                    <td class="text-center" style="background-color:#875A7B;color:white">
+                                        <p >Product Code</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="os.product_code"/>
+                                    </td>
+                                </tr>
+                            </tr>
+                            <tr class="border-black" style="background-color:#01A09C;color:white">
+                                <tr class="border-black">
+                                    <td class="text-center" style="background-color:#875A7B;color:white">
+                                        <p >Quantity</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="os.product_qty"/>
+                                    </td>
+                                    <td class="text-center" style="background-color:#875A7B;color:white">
+                                        <p >Bom code</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="os.bom_code"/>
+                                    </td>
+                                </tr>
+                            </tr>
+                            <tr class="border-black" style="background-color:#01A09C;color:white">
+                                <tr class="border-black">
+                                    <td class="text-center" style="background-color:#875A7B;color:white">
+                                        <p >State</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="os.state"/>
+                                    </td>
+                                    <td class="text-center" style="background-color:#875A7B;color:white">
+                                        <p >Stock</p>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="os.stock_id.name"/>
+                                    </td>
+                                </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br/>
+                    <h4 class="text-center"  style="background-color:#01A09C;color:white;padding:10px">Material</h4>
+                    <t t-foreach="os.bom_line_ids" t-as="line">
+                        <table class="table table-bordered " >
+                            <tbody>
+                                <tr class="border-black" style="background-color:#875A7B;color:white">
+                                    <td class="text-center"><span>Product code</span></td>
+                                    <td class="text-center"><span>Product</span></td>
+                                    <td class="text-center"><span>Quantity</span></td>
+                                    <td class="text-center"><span>Unit</span></td>
+                                    <td class="text-center"><span>Scrap Quantity</span></td>
+                                    <td class="text-center"><span>Scrap %</span></td>
+                                    <td class="text-center"><span>Stock</span></td>
+                                    <td class="text-center"><span>Product Type</span></td>
+                                </tr>
+                                <tr class="border-black" style="height: 10px;">
+                                    <td class="text-center">
+                                        <span t-field="line.code"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="line.product_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="line.product_qty"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="line.product_uom_id.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="line.scrap_qty"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="line.scrap_modelas"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="line.warehouse_item.name"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="line.types_production"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
+

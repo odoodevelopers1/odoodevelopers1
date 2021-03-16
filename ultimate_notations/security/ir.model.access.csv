@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_notations_line,notations.line,model_notations_line,base.group_user,1,1,1,1
+access_notations_relations,notations.relations,model_notations_relations,base.group_user,1,1,1,1
+access_notations_selection,notations.selection,model_notations_selection,base.group_user,1,1,1,1

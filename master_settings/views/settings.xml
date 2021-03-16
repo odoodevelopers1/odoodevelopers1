@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.hr..jcb.manage</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="75"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="Variables" string="Variables" data-key="master_settings" >
+                        <h2>المتغيرات</h2>
+                        <div class="row mt16 o_settings_container">
+                                <div class="o_setting_left_pane">
+                                    <group>
+                                        <field name="work_hour"  widget="float_time"/>
+                                        <field name="connect_with_hr"/>
+                                        <field name="product_scrap_stock"/>
+                                    </group>
+                                </div>
+                        </div>
+                    </div>
+                </xpath>
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" string="Production Variables" data-key="master_settings" >
+                        <h2>متغيرات الانتاج</h2>
+                        <div class="row mt16 o_settings_container">
+                            <div class="o_setting_left_pane">
+                                <group>
+                                    <field name="type_cost_recipt" />
+                                    <field name="account_manufacture"/>
+                                    <field name="account_production"/>
+                                    <field name="account_costing"/>
+                                    <field name="calculation_cost_not_direct"/>
+                                    <field name="change_cost_range_product"/>
+                                </group>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+<!--        <record id="res_config_settings_view_form_new" model="ir.ui.view">-->
+<!--            <field name="name">res.config.settings.view.form.inherit.hr..jcb.manage.new</field>-->
+<!--            <field name="model">res.config.settings</field>-->
+<!--            <field name="priority" eval="75"/>-->
+<!--            <field name="inherit_id" ref="base.res_config_settings_view_form"/>-->
+<!--            <field name="arch" type="xml">-->
+<!--                <xpath expr="//div[hasclass('settings')]" position="inside">-->
+<!--                    <div class="app_settings_block" data-string="Setting Ultimate" string="Setting Ultimate" data-key="master_settings" >-->
+<!--                        <h2>متغيرات الانتاج</h2>-->
+<!--                        <div class="row mt16 o_settings_container">-->
+<!--                            <div class="o_setting_left_pane">-->
+<!--                                <group>-->
+<!--                                    <field name="type_cost_recipt" />-->
+<!--                                    <field name="account_manufacture"/>-->
+<!--                                    <field name="account_production"/>-->
+<!--                                    <field name="account_costing"/>-->
+<!--                                    <field name="calculation_cost_not_direct"/>-->
+<!--                                    <field name="change_cost_range_product"/>-->
+<!--                                </group>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </xpath>-->
+<!--            </field>-->
+<!--        </record>-->
+        <record id="jcb_attendance_management_configuration" model="ir.actions.act_window">
+            <field name="name">Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="context">{'module' : 'master_settings'}</field>
+        </record>
+
+<!--        <record id="settings_production_change_custom" model="ir.actions.act_window">-->
+<!--            <field name="name">settings</field>-->
+<!--            <field name="res_model">res.config.settings</field>-->
+<!--            <field name="type">ir.actions.act_window</field>-->
+<!--            <field name="view_mode">form</field>-->
+<!--&lt;!&ndash;            <field name="view_id" ref="base_setup.res_config_settings_view_form_new"/>&ndash;&gt;-->
+<!--            <field name="target">inline</field>-->
+<!--            <field name="context">{'module' : 'master_settings'}</field>-->
+<!--        </record>-->
+
+
+
+        <menuitem id="Configuration_attendance_management_menu"
+                  name="اعدادات المتغيرات"
+                  action="jcb_attendance_management_configuration"
+                  parent="master_setting_menu"
+                  sequence="1"/>
+
+<!--        <menuitem id="Configuration_attendance_management_production_menu"-->
+<!--                  name="اعدادات  متغيرات الانتاج"-->
+<!--                  action="settings_production_change_custom"-->
+<!--                  parent="master_setting_menu"-->
+<!--                  sequence="2"/>-->
+    </data>
+</odoo>
